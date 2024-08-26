@@ -1,0 +1,46 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "vrapture",
+          "appId": "1:484534619681:android:6c9b179a8af55b6b96dd60",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "vrapture",
+          "configurations": {
+            "android": "1:484534619681:android:6c9b179a8af55b6b96dd60",
+            "ios": "1:484534619681:ios:300c19d2c760fd6296dd60",
+            "macos": "1:484534619681:ios:300c19d2c760fd6296dd60",
+            "web": "1:484534619681:web:ea6246ae4873ea9396dd60",
+            "windows": "1:484534619681:web:cfebbc06fa115d8b96dd60"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
